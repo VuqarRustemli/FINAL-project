@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.top-banner {
+    background: #e74c3c;
+    color: #fff;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 14px;
+}
+
+.top-banner a {
+    color: #fff;
+    font-weight: bold;
+    margin-left: 5px;
+    text-decoration: underline;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.menu a.active,
+.menu a:hover {
+    color: #e74c3c;
+}
+
+.shop-btn {
+    background: #e74c3c;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+
+/* Search Box */
+.search-box {
+    position: relative;
+}
+
+.search-box input {
+    padding: 6px 30px 6px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.search-box i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+}
+
+/* Icons (right section) */
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart {
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #e74c3c;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+.shop-btn {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.shop-btn:hover {
+    background: #e74c3c;
+}
+
+.login-btn {
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sub-main {
+    width: 85%;
+    margin: auto;
+    margin-top: 35px;
+}
+
+.sub-main button {
+    padding: 5px 7px;
+    border: none;
+    cursor: pointer;
+    background-color: #cc3a3a;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 13px;
+}
+
+.user-details {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.user-details h3 {
+    line-height: 2;
+    font-size: 25px;
+    font-weight: 500;
+    color: #cc3a3a;
+}
+
+.user-details p {
+    line-height: 2;
+    font-size: 18px;
+    word-spacing: 5px;
+}

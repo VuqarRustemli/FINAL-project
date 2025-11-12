@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.top-banner {
+    background: #e74c3c;
+    color: #fff;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 14px;
+}
+
+.top-banner a {
+    color: #fff;
+    font-weight: bold;
+    margin-left: 5px;
+    text-decoration: underline;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.menu a.active,
+.menu a:hover {
+    color: #e74c3c;
+}
+
+.shop-btn {
+    background: #e74c3c;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+
+/* Search Box */
+.search-box {
+    position: relative;
+}
+
+.search-box input {
+    padding: 6px 30px 6px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.search-box i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+}
+
+/* Icons (right section) */
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart {
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #e74c3c;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+.shop-btn {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.shop-btn:hover {
+    background: #e74c3c;
+}
+
+.login-btn {
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sub-main {
+    width: 85%;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 150px;
+    display: flex;
+    gap: 25px;
+}
+
+.left-side {
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sub-left-side {
+    width: 82%;
+    height: 457px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.sub-left-side p {
+    font-size: 13px;
+    line-height: 3;
+}
+
+.right-side {
+    width: 70%;
+    /* border: 1px solid green; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.call-to-us,
+.write-to-us {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.left-side hr {
+    margin: 20px 0 20px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #db4444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-right-side {
+    width: 93%;
+    height: 457px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.contact {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact input {
+    width: 235px;
+    height: 45px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 0;
+    outline: none;
+    background-color: #f5f5f5;
+}
+
+form textarea {
+    width: 100%;
+    height: 207px;
+    margin-top: 20px;
+    border-radius: 4px;
+    border: 0;
+    outline: none;
+    background-color: #f5f5f5;
+    padding: 20px 0 20px 10px;
+}
+
+.send {
+    width: 100%;
+    border: 0;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+
+.send button {
+    width: 215px;
+    height: 56px;
+    background-color: #db4444;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    background-color: #e74c3c;
+}
+
+.sub-footer {
+    width: 85%;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+    padding-top: 50px;
+}
+
+.sub-footer .detail {
+    width: 156px;
+}
+
+.sub-footer .detail input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.sub-footer .detail h4 {
+    color: #fff;
+    font-weight: 500;
+}
+
+.sub-footer .detail p {
+    color: #fff;
+    line-height: 3;
+}
+
+.sub-footer .detail ul li {
+    color: #fff;
+    list-style-type: none;
+    font-size: 14px;
+    line-height: 3;
+}
+
+.exclusive {
+    font-size: 14px;
+}
+
+.subscribe {
+    font-size: 15px;
+}
