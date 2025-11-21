@@ -17,7 +17,7 @@ function createUser() {
             },
             body: JSON.stringify(user)
         })
-        then(async response => {
+        .then(async response => {
             if (response.ok) {
                 alert('User register successfully');
             } else {

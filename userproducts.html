@@ -2,19 +2,17 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/checkout.css">
-    <title>Checkout Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/userproducts.css">
+    <title>Document</title>
 </head>
 
 <body>
-
     <div class="top-banner">
         Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
         <a href="#">ShopNow</a>
     </div>
-
 
     <nav class="navbar">
         <div class="logo">E-commerce</div>
@@ -42,72 +40,39 @@
             <button class="logout-btn">Log out</button>
         </div>
     </nav>
-    <main>
-        <div class="sub-main">
-            <form class="checkout-container">
-                <h2>Checkout</h2>
 
-                <!-- Left Side -->
-                <div class="billing-info">
-                    <label>First name</label>
-                    <input type="text" placeholder="Enter your first name" required>
+    <div class="container">
 
-                    <label>Last name</label>
-                    <input type="text" placeholder="Enter your last name" required>
-
-                    <label>State</label>
-                    <select>
-                        <option>Choose...</option>
-                        <option>California</option>
-                        <option>New York</option>
-                        <option>Texas</option>
-                    </select>
-
-                    <label>Address</label>
-                    <input type="text" placeholder="Street address" required>
-
-                    <label>Zip</label>
-                    <input type="text" placeholder="Zip code" style="width: 150px;">
-
-                    <label>Tel</label>
-                    <input type="tel" placeholder="Phone number">
-
-                    <label>Email</label>
-                    <input type="email" placeholder="example@email.com">
-                </div>
-
-                <!-- Right Side -->
-                <div class="payment-section">
-                    <div>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png"
-                            alt="Mastercard">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo_%282018%29.svg"
-                            alt="AmEx">
-                    </div>
-
-                    <label>Card number</label>
-                    <input type="text" placeholder="1234 5678 9012 3456" required>
-
-                    <label>Expiration (MM/YY)</label>
-                    <div style="display:flex; gap:10px;">
-                        <input type="text" placeholder="MM" style="width:80px;">
-                        <input type="text" placeholder="YY" style="width:80px;">
-                        <input type="text" placeholder="CVV" style="width:100px;">
-                    </div>
-
-                    <div class="summary">
-                        <div><span>Subtotal</span><span>$189.97</span></div>
-                        <div><span>Shipping</span><span>FREE</span></div>
-                        <div class="total"><span>Total</span><span>$189.97</span></div>
-                    </div>
-
-                    <button type="submit" class="place-order">Place order</button>
-                </div>
-            </form>
+        <!-- Header & Create button -->
+        <div class="header-bar">
+            <h3 class="fw-bold">Products</h3>
+            <button class="btn btn-primary">New product</button>
         </div>
-    </main>
 
+        <table class="table table-bordered align-middle shadow-sm">
+            <thead>
+                <tr>
+                    <th style="width: 60px;">Id</th>
+                    <th style="width: 160px;">Brand</th>
+                    <th style="width: 160px;">Model</th>
+                    <th style="width: 150px;">Category</th>
+                    <th style="width: 200px;">Image</th>
+                    <th style="width: 150px;">Value</th>
+                    <th style="width: 120px;">Rating</th>
+                    <th style="width: 220px;">Operations</th>
+                </tr>
+            </thead>
+
+             <!-- <tbody>
+                <tr>
+                    <td colspan="8" class="text-center py-4 text-muted">
+                        <i>There are no products added yet.</i>
+                    </td>
+                </tr>
+            </tbody> -->
+        </table>
+
+    </div>
 
     <footer>
         <div class="footer-container">
@@ -161,6 +126,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/userproducts.js"></script>
 </body>
 
 </html>

@@ -41,7 +41,7 @@
             <!-- <img src="https://i.pravatar.cc/40" class="avatar" alt="user" /> -->
             <a href="./profile.html"><i class="fa-solid fa-user"></i></a>
             <span id="username">username</span>
-            <button class="login-btn">Log in</button>
+            <button class="logout-btn">Log out</button>
         </div>
     </nav>
     <main>
@@ -50,7 +50,16 @@
                 <div class="shop">
                     <h2>Shop</h2>
                     <input type="search" id="searchInput" placeholder="Search" oninput="searchProduct()">
-                    <h3>Category</h3>
+                    <aside class="sidebar">
+                        <h2>Category</h2>
+                        <ul id="categoryList">
+                            <!-- <li data-category="all" class="active">All products</li> -->
+                            <li data-category="clothing">Clothing</li>
+                            <li data-category="footwear">Footwear</li>
+                            <li data-category="accessories">Accessories</li>
+                            <li data-category="tablets">Tablets</li>
+                        </ul>
+                    </aside>
                 </div>
                 <div class="rate">
                     <h3>Rate</h3>
@@ -73,6 +82,12 @@
                     <option value="priceDesc">Price: high to Low</option>
                 </select>
                 <div class="products">
+                    <!-- <button onclick="addToCart({
+    id: 1,
+    name: 'XPS 13',
+    price: 1299.99,
+    image: 'img/xps13.jpg'
+})">Add to Cart</button> -->
                 </div>
                 <div class="btn-groups">
                     <button id="prev-btn">Əvvəlki</button>
@@ -120,7 +135,7 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <!-- <script src="js/script.js"></script> -->
     <script src="./js/shop.js"></script>
 </body>
 

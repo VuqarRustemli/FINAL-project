@@ -8,9 +8,9 @@
 body {
     background-color: #fff;
     color: #333;
-    
 }
 
+/* Top Banner */
 .top-banner {
     background: #e74c3c;
     color: #fff;
@@ -65,6 +65,21 @@ body {
     border-radius: 5px;
 }
 
+.shop-btn {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.shop-btn:hover {
+    background: #e74c3c;
+}
+
 /* Search Box */
 .search-box {
     position: relative;
@@ -106,21 +121,6 @@ body {
     border-radius: 50%;
 }
 
-.shop-btn {
-    background-color: white;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-    border: 1px solid #bfbfbf;
-}
-
-.shop-btn:hover {
-    color: #e74c3c;
-}
 
 .logout-btn {
     background: #e74c3c;
@@ -131,78 +131,69 @@ body {
     cursor: pointer;
 }
 
-.checkout-container {
-    background: white;
-    width: 900px;
-    border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    margin: 0;
+
+/* Cədvəl başlığı */
+.table thead th {
+    background-color: #f7f7f7;
+    font-weight: 600;
+    padding: 14px;
+    font-size: 15px;
+    border-bottom: 2px solid #e5e5e5;
 }
 
-h2 {
-    grid-column: 1 / -1;
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-label {
-    font-weight: bold;
-    margin-bottom: 5px;
-    display: block;
-}
-
-input,
-select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    margin-bottom: 15px;
-}
-
-.payment-section img {
-    height: 28px;
-    margin-right: 8px;
+/* Cədvəl sətirləri */
+.table tbody td {
+    padding: 18px 12px;
     vertical-align: middle;
+    font-size: 15px;
 }
 
-.summary {
-    margin-top: 20px;
-    border-top: 1px solid #ddd;
-    padding-top: 15px;
+/* Boş şəkil sahəsi */
+.image-box {
+    width: 130px;
+    height: 95px;
+    background-color: #f1f3f5;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #868e96;
+    font-size: 14px;
 }
 
-.summary div {
+/* Düymələr */
+.btn-edit {
+    background-color: #0d6efd;
+    color: #fff;
+    border-radius: 6px;
+    padding: 6px 14px;
+    border: none;
+    font-size: 14px;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+    color: #fff;
+    border-radius: 6px;
+    padding: 6px 14px;
+    border: none;
+    font-size: 14px;
+}
+
+/* Header bar */
+.header-bar {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 8px;
+    align-items: center;
+    margin: 30px 0 22px 0;
 }
 
-.total {
-    font-size: 18px;
-    font-weight: bold;
+.header-bar button {
+    font-size: 15px;
+    padding: 8px 18px;
 }
 
-.place-order {
-    background: #e63946;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    width: 100%;
-    margin-top: 20px;
-    font-size: 16px;
-}
-
-.place-order:hover {
-    background: #d62828;
-}
 
 footer {
     background-color: #db4444;
@@ -306,18 +297,3 @@ footer {
 .footer-column img {
     width: 60px;
 }
-
-main {
-    width: 100%;
-}
-
-.sub-main {
-    width: 85%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-

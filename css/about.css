@@ -57,12 +57,6 @@ body {
     color: #e74c3c;
 }
 
-.shop-btn {
-    background: #e74c3c;
-    color: white;
-    padding: 6px 12px;
-    border-radius: 5px;
-}
 
 /* Search Box */
 .search-box {
@@ -106,7 +100,7 @@ body {
 }
 
 .shop-btn {
-    background: #000;
+    background-color: white;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -114,13 +108,14 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
+    border: 1px solid #bfbfbf;
 }
 
 .shop-btn:hover {
-    background: #e74c3c;
+    color: #e74c3c;
 }
 
-.login-btn {
+.logout-btn {
     background: #e74c3c;
     color: #fff;
     border: none;

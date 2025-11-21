@@ -1,5 +1,5 @@
 document.querySelector(".product-btn").addEventListener('click', () => {
-    window.location.href = "createproduct.html"
+    window.location.href = "userproducts.html"
 })
 
 const responseBody = JSON.parse(localStorage.getItem('body'));

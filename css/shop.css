@@ -106,7 +106,7 @@ body {
 }
 
 .shop-btn {
-    background: #000;
+    background-color: white;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -114,13 +114,14 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
+    border: 1px solid #bfbfbf;
 }
 
 .shop-btn:hover {
-    background: #e74c3c;
+    color: #e74c3c;
 }
 
-.login-btn {
+.logout-btn {
     background: #e74c3c;
     color: #fff;
     border: none;
@@ -311,4 +312,31 @@ footer {
 
 .subscribe {
     font-size: 15px;
+}
+
+.sidebar {
+    width: 120px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.sidebar ul li:hover {
+    background: #ddd;
+}
+
+.sidebar ul li.active {
+    background: #222;
+    color: #fff;
 }

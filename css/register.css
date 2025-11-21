@@ -38,7 +38,7 @@
 }
 
 .shop-btn {
-    background: #000;
+    background-color: white;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -46,10 +46,20 @@
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
+    border: 1px solid #bfbfbf;
 }
 
 .shop-btn:hover {
+    color: #e74c3c;
+}
+
+.logout-btn {
     background: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .register-text {
